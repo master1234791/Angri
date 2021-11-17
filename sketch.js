@@ -42,7 +42,7 @@ function setup(){
         stiffness: 0.04, 
         length: 10 }
         cadena = Constraint.create (opciones);
-        World.add (mundo,cadena);
+        World.add (world,cadena);
 }
 
 function draw(){
