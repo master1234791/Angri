@@ -37,7 +37,7 @@ function setup(){
     platform = new Ground(width/16,height*7/8,1000,600);
     constraintLog = new Ground(200,100,80,PI/2);
     var opciones ={
-        bodyA: bird.body, 
+        bodyA: bird1.body, 
         bodyB: constrainedLog.body, 
         stiffness: 0.04, 
         length: 10 }
