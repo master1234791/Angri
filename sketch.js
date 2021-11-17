@@ -38,7 +38,7 @@ function setup(){
     constraintLog = new Ground(200,100,80,PI/2);
     var opciones ={
         bodyA: bird1.body, 
-        bodyB: constrainedLog.body, 
+        bodyB: constraintLog.body, 
         stiffness: 0.04, 
         length: 10 }
         cadena = Constraint.create (opciones);
