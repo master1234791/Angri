@@ -35,14 +35,14 @@ function setup(){
     pig1 = new Pig(1300,height-70);
     pig2 = new Pig(1300,height-270);
     platform = new Ground(width/16,height*7/8,1000,600);
-   // constraintLog = new Ground(200,100,80,PI/2);
-    //var opciones = 
-    //{bodyA: bird.body, 
-   // bodyB: constrainedLog.body, 
-   // rigidez: 0.04, 
-   // longitud: 10 }
-   // cadena = Constraint.create (opciones);
-   // World.add (mundo,cadena);
+    constraintLog = new Ground(200,100,80,PI/2);
+    var opciones ={
+        bodyA: bird.body, 
+        bodyB: constrainedLog.body, 
+        stiffness: 0.04, 
+        length: 10 }
+        cadena = Constraint.create (opciones);
+        World.add (mundo,cadena);
 }
 
 function draw(){
@@ -65,6 +65,6 @@ function draw(){
     pig2.display();
     bird1.display();
     ground.display();
-    //constraintLog.display();
+    constraintLog.display();
 
 }
